@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>game</title>
+  </head>
+  <body>
+    <div id="starter">
+      <h1>به بازی سنگ، کاغذ، قیچی خوش آمدید </h1>
+
+      <p>
+      
+      این بازی دو نفره است (شما در مقابل کامپیوتر). 
+      
+      در پایان ۵ دور، برنده نهایی مشخص می‌شود
+
+
+      </p>
+
+      <p id="rules">
+        <b>:  قوانین</b><br />
+         سنگ قیچی را می‌بُرد<br />
+         قیچی کاغذ را می‌بُرد<br />
+         کاغذ سنگ را می‌بُرد<br />
+        اگر یکی بود = مساوی
+      </p>
+
+      <h3 style="color:#000f3d">:لطفاً نام خود را وارد کنید</h3>
+      <input class="inp" type="text" id="playerNameInput" placeholder="نام شما" />
+      <br>
+      <button id="startbutton">شروع بازی</button>
+    </div>
+
+    <div id="game-screen" style="display: none">
+      <h2>:انتخاب کنید</h2>
+      <div class="choices">
+        <button class="choicebt" onclick="play('سنگ')">سنگ</button>
+        <button class="choicebt" onclick="play('کاغذ')">کاغذ</button>
+        <button class="choicebt" onclick="play('قیچی')">قیچی</button>
+      </div>
+
+      <div id="result"></div>
+      <p id="score">امتیاز شما: 0 | امتیاز کامپیوتر: 0</p>
+      <button id="restartBtn" style="display:none;">بازی دوباره</button>
+    </div>
+    <button id="restartBtnd" style="display:none;"> بازی دوباره</button>
+
+
+     
+    </div>
+
+    <script src="./javascript/script.js"></script>
+  </body>
+</html>
