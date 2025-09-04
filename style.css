@@ -1,0 +1,139 @@
+:root {
+  --bg-1: #0b1020;
+  --bg-2: #101737;
+  --primary: #011454;
+  --light: #f6efef;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(
+      1200px 600px at 80% -10%,
+      #1b2b7a33,
+      transparent 60%
+    ),
+    radial-gradient(800px 400px at 10% 110%, #00e0ff22, transparent 60%),
+    linear-gradient(160deg, var(--bg-1), var(--bg-2));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+      90deg,
+      #7aa2ff0d 0 1px,
+      transparent 1px 140px
+    ),
+    repeating-linear-gradient(0deg, #7aa2ff12 0 1px, transparent 1px 140px);
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+#starter,
+#game-screen {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+h1, h2 {
+  color: var(--primary);
+}
+
+
+p {
+  color: #545454;
+  font-size: 16px;
+}
+
+#rules {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.inp {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 15px 0;
+  text-align: right;
+ 
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#startbutton{
+  margin-bottom: -50px;
+  
+}
+
+
+#startbutton, .choicebt {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+#startbutton:hover, .choicebt:hover {
+  background-color: var(--light);
+  color: var(--primary);
+  transform: translateY(-3px);
+  box-shadow: 1px 1px 8px var(--primary);
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #011454;
+}
+
+.choicebt:hover {
+  background-color: #011454;
+  color: #ffffff;
+  box-shadow: 1px 1px 8px #484848;
+}
+
+#restartBtn:hover {
+  background-color: #f6efef;
+  transform: translateY(-4px);
+  box-shadow: 1px 1px 8px #011454;
+  color: #011454;
+}
+
+#restartBtnd {
+  background-color: #f44336; 
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+#restartBtnd:hover {
+  background-color: #c47878; 
+  transform: translateY(-3px);
+}
